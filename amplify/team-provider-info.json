@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-securityapp-dev-192135-authRole",
+      "UnauthRoleArn": "arn:aws:iam::416643708045:role/amplify-securityapp-dev-192135-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::416643708045:role/amplify-securityapp-dev-192135-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-securityapp-dev-192135-deployment",
+      "UnauthRoleName": "amplify-securityapp-dev-192135-unauthRole",
+      "StackName": "amplify-securityapp-dev-192135",
+      "StackId": "arn:aws:cloudformation:us-west-1:416643708045:stack/amplify-securityapp-dev-192135/c5c89320-6a14-11ed-8a1b-028ceee0687f",
+      "AmplifyAppId": "d3b1uwvxbgunxq"
+    },
+    "categories": {
+      "function": {
+        "getSensor": {
+          "deploymentBucketName": "amplify-securityapp-dev-192135-deployment",
+          "s3Key": "amplify-builds/getSensor-56575349667562753839-build.zip"
+        }
+      },
+      "api": {
+        "api": {}
+      },
+      "auth": {
+        "securityappc1336e09": {}
+      }
+    }
+  }
+}
