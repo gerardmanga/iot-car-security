@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:learning/models/getSensor.dart';
 import 'package:learning/models/remote_service.dart';
@@ -152,7 +153,9 @@ class _FirstPageState extends State<FirstPage> {
                     minimumSize: Size(350.0, 50),
                     onPrimary: Colors.white,
                     primary: Colors.black),
-                onPressed: () {},
+                onPressed: () {
+                  SystemNavigator.pop();
+                },
                 child: Text("Sign Out"),
               ),
       ),
@@ -259,7 +262,6 @@ class _ArmSecuritySystemState extends State<ArmSecuritySystem> {
             String strdetectedInfr = detectedInfrared.toString();
 
             return Container(
-              //child: Text('${sensors![index].rightFrontUltrasonicSensor}')
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -420,8 +422,6 @@ class _TrackLocationState extends State<TrackLocation> {
     }
   }
 
-  //sensors![index].gpsCoordinates
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -439,11 +439,10 @@ class _TrackLocationState extends State<TrackLocation> {
                 itemBuilder: (context, index) {
                   String latitude = sensors![index].latitude;
                   double lat = double.parse(latitude);
-                  //double lat = 37.573707;
 
                   String longitude = sensors![index].longitude;
                   double lon = double.parse(longitude);
-                  //double lon = -121.991722;
+
                   return Container(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
