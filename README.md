@@ -1,2 +1,2 @@
-How to run tha application:
+How to run tha application: \
 1.
